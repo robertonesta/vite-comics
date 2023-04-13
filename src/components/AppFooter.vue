@@ -11,6 +11,57 @@ export default {
 
 <template>
   <div class="footer-top">
+    <div class="container">
+        <div class="top-left">
+            <div>
+                <h4>DC COMICS</h4>
+                <ul>
+                    <li><a href="#">Characters</a></li>
+                    <li><a href="#">Comics</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+                <h4>SHOP</h4>
+                <ul>
+                    <li><a href="#">Shop DC</a></li>
+                    <li><a href="#">Shop DC Collectibles</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>DC</h4>
+                <ul>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Privacy policy (New)</a></li>
+                    <li><a href="#">Ad Choices</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                    <li><a href="#">Talent Workshops</a></li>
+                    <li><a href="#">CPSC Certificates</a></li>
+                    <li><a href="#">Ratings</a></li>
+                    <li><a href="#">Shop Help</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>SITES</h4>
+                <ul>
+                    <li><a href="#">DC</a></li>
+                    <li><a href="#">MAD Magazine</a></li>
+                    <li><a href="#">DC Kids</a></li>
+                    <li><a href="#">DC Universe</a></li>
+                    <li><a href="#">DC Power Visa</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-right">
+            <img src="../assets/img/dc-logo-bg.png" alt="">
+        </div>
+
+    </div>
   </div>
   <div class="footer-bottom">
     <div class="container">
@@ -34,6 +85,36 @@ export default {
 </template>
 
 <style scoped lang="scss">
+.footer-top{
+    background-image: url(../assets/img/footer-bg.jpg);
+    max-width: 100%;
+    z-index: 1;
+    .container{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .top-left{
+            display: flex;
+            color: white;
+            ul{
+                list-style-type: none;
+
+                a{    
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .top-right{
+            img{
+                z-index: 2;
+            }
+        }
+    }
+}
 .footer-bottom{
     background-color: #303030;
     .container{
@@ -42,6 +123,8 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        z-index: 3;
+        
         button{
             color: white;
             background: #30303000;
