@@ -34,9 +34,11 @@ export default {
 
 <style scoped lang="scss">
 .container{
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
 
     ul{
         display: flex;
