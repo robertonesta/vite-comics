@@ -1,8 +1,12 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './components/AppHeader.vue'
+import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
 export default {
   components: {
-    HelloWorld
+    AppHeader,
+    AppMain,
+    AppFooter
   },
   data() {
     return {
@@ -13,9 +17,9 @@ export default {
 </script>
 
 <template>
-  <HelloWorld></HelloWorld>
-  <HelloWorld></HelloWorld>
-  <HelloWorld></HelloWorld>
+  <AppHeader/>
+  <AppMain/>
+  <AppFooter/>
 </template>
 
 <style>
