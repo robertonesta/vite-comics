@@ -46,7 +46,6 @@ export default {
         padding: 0.5rem 1rem;
 
         li{
-            align-items: center;
             padding: 0.25rem 0.5rem;
         };
     }
