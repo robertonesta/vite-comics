@@ -23,7 +23,11 @@ export default {
         <div class="container">
             <CardsContainer>
             </CardsContainer>
+        </div >
+        <div class="load">
+            <button><a href="">Load more</a></button>
         </div>
+        
     </div>
     <section class="icons">
         <div class="container">
@@ -64,7 +68,21 @@ export default {
         display: flex;
         width: 70%;
     }
-
+}
+.load{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    button{
+        padding: 0.5rem 4rem;
+        background-color: #0282f9;
+        border: none;
+        a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
 }
 
 .icons{

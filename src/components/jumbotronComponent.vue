@@ -1,5 +1,5 @@
 <template>
-    <div class="pippo">
+    <div class="jumbo">
         <img class="w-100" src="../assets/img/jumbotron.jpg" alt="jumbotron">
     </div>
 </template>
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.pippo{
+.jumbo{
     height: 400px;
     overflow: hidden;
 }
