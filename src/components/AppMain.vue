@@ -15,7 +15,12 @@ export default {
 </script>
 
 <template>
-    <CardsContainer></CardsContainer>
+    <div class="content">
+        <div class="container">
+            <CardsContainer>
+            </CardsContainer>
+        </div>
+    </div>
     <section class="icons">
         <div class="container">
             <ul>
@@ -47,6 +52,16 @@ export default {
 </template>
 
 <style scoped lang="scss">
+.content{
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    .container{
+        display: flex;
+        width: 70%;
+    }
+
+}
 
 .icons{
     background-color: #0282f9;

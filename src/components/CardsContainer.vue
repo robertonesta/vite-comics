@@ -1,36 +1,28 @@
-<template>
-    <section class="content">
-        <div class="container">
-            
-        </div>
-    </section>
-</template>
-
 <script>
 import dccomics from "../assets/data/dc-comics.json";
+import SlideEl from "./SlideEl.vue";
 export default {
-   name: "CardsContainer",
-   data(){
-    return{
+    name: "CardsContainer",
+    data(){
+        return{
         dccomics
+        }
+    },
+    components: {
+        SlideEl
     }
-   }
 }
 </script>
 
+<template>
+    <div class="row">
+        <SlideEl class="col-2" v-for="slide in dccomics" :img="slide.thumb" :title="slide.series"></SlideEl>
+    </div>
+</template>
+
+
 <style lang="scss" scoped>
-.content{
-    background-color: black;
-    color: white;
-    padding: 1rem 0;
-    .container{
-        width: 70%;
-        display: flex;
-        align-items: center;
-        h2{
-            font-size: 2rem;
-        }
-    }
-}
+
+
 
 </style>
