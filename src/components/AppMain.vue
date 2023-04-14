@@ -1,20 +1,21 @@
 <script>
+import CardsContainer from './CardsContainer.vue';
 export default {
     name: "AppMain",
     data() {
         return {
+            
            
         }
+    },
+    components: {
+        CardsContainer
     }
 }
 </script>
 
 <template>
-    <section class="content">
-        <div class="container">
-            <h2><i class="fa-solid fa-arrow-right"></i>Content Goes Here<i class="fa-solid fa-arrow-left"></i></h2>
-        </div>
-    </section>
+    <CardsContainer></CardsContainer>
     <section class="icons">
         <div class="container">
             <ul>
@@ -31,7 +32,7 @@ export default {
                     <span>SUBSCRIPTION</span>
                 </li>
                 <li>
-                    <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+                    <img height="40" src="../assets/img/buy-comics-shop-locator.png" alt="">
                     <span>COMIC SHOP LOCATOR</span>
                 </li>
                 <li>
@@ -46,19 +47,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.content{
-    background-color: black;
-    color: white;
-    padding: 1rem 0;
-    .container{
-        width: 70%;
-        display: flex;
-        align-items: center;
-        h2{
-            font-size: 2rem;
-        }
-    }
-}
+
 .icons{
     background-color: #0282f9;
     .container{
@@ -67,9 +56,9 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        z-index: 3;
         
         ul{ 
+            padding: 0;
             color: white;
             display: flex;
             list-style-type: none;
@@ -77,7 +66,7 @@ export default {
             li{
                 align-items: center;
                 display: flex;
-                padding: 1rem 0.5rem;
+               padding: 1rem 0.25rem;
                 
                 img{
                     max-width: 50px;

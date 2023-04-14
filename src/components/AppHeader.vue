@@ -3,7 +3,6 @@ export default {
     name: "AppHeader",
     data() {
         return {
-            message: "Hello world"
         }
     }
 }

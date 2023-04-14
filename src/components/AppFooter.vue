@@ -85,10 +85,12 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use "node_modules/bootstrap/scss/bootstrap.scss";
+
 .footer-top{
     background-image: url(../assets/img/footer-bg.jpg);
-    max-width: 100%;
-    z-index: 1;
+    background-size: cover;
+    
     .container{
         width: 70%;
         display: flex;
@@ -99,6 +101,7 @@ export default {
             display: flex;
             color: white;
             ul{
+                padding: 0;
                 list-style-type: none;
 
                 a{    
@@ -108,11 +111,6 @@ export default {
             }
         }
 
-        .top-right{
-            img{
-                z-index: 2;
-            }
-        }
     }
 }
 .footer-bottom{
