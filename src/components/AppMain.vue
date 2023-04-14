@@ -20,7 +20,10 @@ export default {
 <template>
     <jumbotronComponent></jumbotronComponent>
     <div class="content">
-        <div class="container">
+        <button>
+            <a href="">Current Series</a>
+        </button>
+        <div class="container py-5">
             <CardsContainer>
             </CardsContainer>
         </div >
@@ -64,6 +67,19 @@ export default {
     background-color: black;
     color: white;
     padding: 1rem 0;
+    button{
+        margin-left: 15%;
+        transform: translate(0, -100%);
+        background-color: #0282f9;
+        border: 0;
+        a{
+            padding: 0.5rem 1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+        }
+    }
     .container{
         display: flex;
         width: 70%;
@@ -74,6 +90,7 @@ export default {
     display: flex;
     justify-content: center;
     button{
+        margin: 0;
         padding: 0.5rem 4rem;
         background-color: #0282f9;
         border: none;
@@ -81,6 +98,7 @@ export default {
             text-decoration: none;
             color: white;
             text-transform: uppercase;
+            font-weight: 600;
         }
     }
 }
