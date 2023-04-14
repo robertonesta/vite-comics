@@ -17,4 +17,12 @@ export default {
 
 <style lang="scss" scoped>
 
+div{
+    
+    h5{
+        text-transform: uppercase;
+        font-size: smaller;
+    }
+}
+
 </style>

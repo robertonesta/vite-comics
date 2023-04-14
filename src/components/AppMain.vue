@@ -1,5 +1,7 @@
 <script>
+import jumbotronComponent from "./jumbotronComponent.vue"
 import CardsContainer from './CardsContainer.vue';
+
 export default {
     name: "AppMain",
     data() {
@@ -9,12 +11,14 @@ export default {
         }
     },
     components: {
-        CardsContainer
+        CardsContainer,
+        jumbotronComponent
     }
 }
 </script>
 
 <template>
+    <jumbotronComponent></jumbotronComponent>
     <div class="content">
         <div class="container">
             <CardsContainer>
